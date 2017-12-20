@@ -1,8 +1,5 @@
 package com.example.marc.myapplication;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 /**
  * Created by Marc on 19/12/2017.
  */
@@ -10,8 +7,8 @@ import android.os.Bundle;
 public class GameActivity extends Activity implements UnityVideoAdsListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate() {
+        super.onCreate();
         System.out.println("Game activity onCreate()");
     }
 
@@ -22,9 +19,9 @@ public class GameActivity extends Activity implements UnityVideoAdsListener {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        System.out.println("Game activity onStop()");
+    protected void onFinish() {
+        super.onFinish();
+        System.out.println("Game activity onFinish()");
     }
 
     void onFail(){

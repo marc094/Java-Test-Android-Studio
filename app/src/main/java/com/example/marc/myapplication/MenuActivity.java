@@ -1,16 +1,13 @@
 package com.example.marc.myapplication;
 
-import android.app.Activity;
-import android.os.Bundle;
-
 /**
  * Created by Marc on 19/12/2017.
  */
 
 public class MenuActivity extends Activity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate() {
+        super.onCreate();
         System.out.println("Menu activity onCreate()");
     }
 
@@ -21,8 +18,8 @@ public class MenuActivity extends Activity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        System.out.println("Menu activity onStop()");
+    protected void onFinish() {
+        super.onFinish();
+        System.out.println("Menu activity onFinish()");
     }
 }
